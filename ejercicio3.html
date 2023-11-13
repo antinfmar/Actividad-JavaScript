@@ -24,7 +24,6 @@
             var n=Number.parseInt(nota);
 
             // Estructura de control *** if - else ***
-
             /*
             si n>=0 y n <3 entonces
                 calificacion <-- Muy deficiente
@@ -38,6 +37,26 @@
 
             sino calificacion <-- Incorrecta
             */
+
+            if ((n>=0)&&(n<3)){
+                calificacion='Muy deficiente';
+            } else if ((n>=3)&&(n<5)) {
+                calificacion='Insuficiente';
+            } else if ((n>=5)&&(n<6)) {
+                calificacion='Suficiente';
+            } else if ((n>=6)&&(n<7)) {
+                calificacion='Bien';
+            } else if ((n>=7)&&(n<8)) {
+                calificacion='Notable';
+            } else if ((n>=8)&&(n<9)) {
+                calificacion='Notable Alto';
+            } else if ((n>=9)&&(n<10)) {
+                calificacion='Sobresaliente';
+            } else if (n==10) {
+                calificacion='Matricula';
+            } else {
+                calificacion='Incorrecta';
+            }
 
             // Mostramos el resultado
             alert('Una nota de '+nota+' es '+calificacion);
