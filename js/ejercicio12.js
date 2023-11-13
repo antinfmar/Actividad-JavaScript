@@ -1,11 +1,11 @@
 /**
  * Ejercicio 12. Calculadora JavaScript
- * Autor: 
+ * Autor: Antonio Infantes Marin
  */
 
 /**
  * Implementa el Menú 1: Sumar
- * @author: Coloca tu nombre aquí.
+ * @author: Antonio Infantes Marin
  * @return suma
  */
 function menu1()
@@ -21,7 +21,7 @@ function menu1()
 
 /**
  * Implementa el Menú 2: Restar
- * @author: Coloca tu nombre aquí.
+ * @author: Antonio Infantes Marin
  * @return resta
  */
 function menu2()
@@ -30,16 +30,15 @@ function menu2()
     console.info("Resta:");
     
     // IMPLEMENTA TU CÓDIGO AQUÍ
-    let minuendo=0;
-    let sustraendo=0;
-    let resultado=-1;
-
+    let minuendo=parseInt(prompt("Introduzca el prmier minuendo: ",0));
+    let sustraendo=parseInt(prompt("Introduzca el prmier sustraendo: ",0));
+    let resultado=minuendo-sustraendo;
     console.log("El resultado de la resta "+minuendo+" - "+sustraendo+" es "+resultado);
     return resultado;
 }
 /**
  * Implementa el Menú 3: Multiplicar
- * @author: Coloca tu nombre aquí.
+ * @author: Antonio Infantes Marin
  * @return multiplicación
  */
 function menu3()
@@ -48,13 +47,16 @@ function menu3()
     console.info("Multiplica:");
     
     // IMPLEMENTA TU CODIGO AQUÍ 
-
-    return 3;
+    let multi1=parseInt(prompt("Introduzca el primer multiplicador: ",0));
+    let multi2=parseInt(prompt("Introduzca el segundo multiplicador: ",0));
+    let resultado=multi1*multi2;
+    console.log("El resultado de la suma "+multi1+" + "+multi2+" es "+resultado);
+    return resultado;
 }
 
 /**
  * Implementa el Menú 4: Dividir
- * @author: Coloca tu nombre aquí.
+ * @author: Antonio Infantes Marin
  * @return división
  */
 function menu4()
@@ -63,8 +65,11 @@ function menu4()
     console.info("Divide:");
     
     // IMPLEMENTA TU CÓDIGO AQUÍ
-
-    return 4;
+    let divisor1=parseInt(prompt("Introduzca el primer divisor: ",0));
+    let divisor2=parseInt(prompt("Introduzca el segundo divisor: ",0));
+    let resultado=divisor1/divisor2;
+    console.log("El resultado de la suma "+divisor1+" + "+divisor2+" es "+resultado);
+    return resultado;
 
 }
 
