@@ -13,28 +13,29 @@
             <li>Escribiendo en la consola del navegador, usando <code>console.log()</code>.</li>
         </ul>
         
-        <p id="demo">Escribiremos en este elemento HTML</p>
+        <p id="demo">¡Hola mundo!</p>
         <script>
+            demo=document.getElementById("demo");
             // Alerta
-            
+            window.alert(demo.innerHTML)
             /* 
                 Escribir en un elemento HTML, usando innerHTML.
                 Escribimos en este elemento HTML: ¡Hola mundo!
             */
            
-           
+            
             // Consolas log
            
             // Mensaje de información
-            
+            console.log(demo.innerHTML);
             // Mensaje de error
-            
+            console.log("Error");
             // Mensaje de advertencia
-            
+            console.log("Cuidado con lo que haces");            
             // Debugger
             // Descomenta --> 
-            /* Descomenta --> /* debugger
-            console.log('Despues de la depuración'); */ // <--- Descomenta para comprobar el efecto.
+            debugger
+            console.log('Despues de la depuración');
         </script>
     </body>
 </html>
