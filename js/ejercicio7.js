@@ -6,14 +6,16 @@
  */
 function fibonacci(n)
 {
-    let vector=new Array(); // Creamos un vector para alamcenar el cálculo
     
-    // ESCRIBE TU CÓDIGO AQUÍ
+    let vector=new Array(); // Creamos un vector para alamcenar el cálculo
     let i =0;
+    // ESCRIBE TU CÓDIGO AQUÍ
     if(n<=0) {return vector}
     do {
+
         if (i==1||i==0){vector[i]=1;i++;continue;};
         vector[i]=vector[i-2]+vector[i-1]
+        i++;
     } while (i<n);
     return vector; // Retorno de la función
 }

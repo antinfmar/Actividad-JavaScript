@@ -28,6 +28,9 @@ function obtenerCalificacion(nota)
             
             // Complete el codigo AQUÍ
             switch (Number.parseInt(nota)) {
+                case -1:
+                    calificacion="Incorrecta"
+                    break;
                 case 0:
                     calificacion="Muy deficiente"
                     break;
@@ -53,13 +56,16 @@ function obtenerCalificacion(nota)
                     calificacion="Notable"
                     break;
                 case 8:
-                    calificacion="Notable Alto"
+                    calificacion="Notable"
                     break;
                 case 9:
                     calificacion="Sobresaliente"
                     break;
                 case 10:
-                    calificacion="Matricula"
+                    calificacion="Sobresaliente"
+                    break;
+                case 11:
+                    calificacion="Incorrecta"
                     break;
                 default:
                     calificacion="Null"

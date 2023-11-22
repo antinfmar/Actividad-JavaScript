@@ -7,6 +7,9 @@
 function calcularMedia(v)
 {
     // IMPLEMENTA TU CODIGO AQUÍ
+    if (v.length==0) {
+        return 0;
+    }
     let suma=v.reduce((previous,current) => current+=previous);
     let resultado=suma/v.length;
     return resultado;
@@ -18,7 +21,10 @@ function calcularMedia(v)
  */
 function calcularMinimo(v)
 {
-     // <-- CORRIGE E IMPLEMENTA EL CODIGO
+    // <-- CORRIGE E IMPLEMENTA EL CODIGO
+    if (v.length==0) {
+        return 0;
+    }
     let minima=Math.min(...v);
     return minima;
 }
@@ -29,6 +35,9 @@ function calcularMinimo(v)
  */
 function calcularMaximo(v)
 {
+    if (v.length==0) {
+        return 0;
+    }
     let maxima=Math.max(...v); // <-- CORRIGE E IMPLEMENTA EL CODIGO
     return maxima;
 }
@@ -39,7 +48,7 @@ function calcularMaximo(v)
  */
 function contarAprobados(v)
 {
-    let aprobados=v.filter(number=>number>5);
+    let aprobados=v.filter(number => number >= 5);
 
     // COMPLETA TU CODIGO
 
@@ -52,7 +61,7 @@ function contarAprobados(v)
  */
 function contarSuspensos(v)
 {
-    let suspensos=v.filter(number=>number<5);
+    let suspensos=v.filter(number => number < 5);
     
     // COMPLETA TU CODIGO
 
@@ -82,8 +91,6 @@ function appMain(){
         notas[i]=n;
         console.log(`notas[${i}]: ${notas[i]}`);
     }
-
-
     console.log("La nota media es "+calcularMedia(notas));
     console.log("La nota mínima es "+calcularMinimo(notas));
     console.log("La nota máxima es "+calcularMaximo(notas));
